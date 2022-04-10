@@ -1,0 +1,70 @@
+---
+title: "Inclass Assignment 2 - Group 4- HI"
+author: "Group 4- Health Informatics Group"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Hello World
+```{r}
+H <- "Hello"
+W <- "World!"
+print (paste(H,W))
+```
+
+# Get name from user
+```{r}
+my.name <- readline(prompt = "Enter your name:")
+print(paste("Hello", my.name))
+```
+
+# Sequence creation
+```{r}
+s1 <- c(12, 4, 4, 6, 9, 3)
+s2 <- c(5, 3, 2, 2, 12, 9)
+
+```
+
+# Multiple the 1st sequence by 120 
+```{r}
+s1*120 -> sm1
+```
+
+# Multiple the 2nd sequence by 145 
+```{r}
+s2*145 -> sm2
+```
+
+# Add both sequence together
+```{r}
+sm1+sm2
+```
+
+# Find the values that are > 5
+```{r}
+s1>5
+```
+
+# Martix
+```{r}
+m1 <- matrix(1:12, nrow = 3, ncol = 4)
+m1
+```
+
+# Length of the above matrix
+```{r}
+length(m1)
+```
+
+# Data frame
+```{r}
+Employee <- c("Chef John Doe","BigChef Peter Gynn","BiggerChef Jolie Hope")
+Salary <- c("21000","23400","26800")
+Firstday <- as.Date(c('2010-11-01','2008-03-25','2007-03-14'))
+  
+data.frame(Employee,Salary,Firstday)
+```
